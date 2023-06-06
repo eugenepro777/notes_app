@@ -19,7 +19,6 @@ def app_menu():
 
         match choice:
             case "1":
-                # os.system('cls' if os.name == 'nt' else 'clear')
                 print("\n" * 100)
                 display_all_notes()
                 time.sleep(3)
