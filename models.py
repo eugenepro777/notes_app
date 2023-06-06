@@ -1,4 +1,5 @@
 import json
+import time
 from datetime import datetime
 
 
@@ -104,6 +105,8 @@ def delete_note() -> None:
                 del notes[id_note]
                 save_notes(notes)
                 print(f"Заметка с идентификатором {id_note} и именем {title} удалена")
+                time.sleep(1)
+                print()
             else:
                 print(f"Заметка с идентификатором {id_note} не найдена")
         else:
