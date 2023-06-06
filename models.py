@@ -37,8 +37,9 @@ def save_notes(notes):
     with open("notes.json", "w") as file:
         json.dump(notes, file, indent=2)
 
+
 def update_note() -> None:
-    """gf"""
+    """Изменяет указанную заметку в словаре заметок и сохраняет обновленный словарь в файл"""
     search_parameter = input("Введите идентификатор или заголовок заметки: ")
     notes = get_notes()
     matching_notes = {k: v for k, v in notes.items() if search_parameter in [k, v["title"]]}
