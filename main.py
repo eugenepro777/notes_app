@@ -19,7 +19,7 @@ def app_menu():
 
         match choice:
             case "1":
-                print("\n" * 100)
+                print("\n" * 90)
                 display_all_notes()
                 time.sleep(3)
             case "2":

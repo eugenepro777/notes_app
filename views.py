@@ -18,7 +18,7 @@ def display_note(id_note) -> None:
 
 def display_all_notes() -> None:
     """Отобразить все заметки"""
-    print("*" * 25)
+    print("*" * 30)
     notes = get_notes()
     if not notes:
         print("Заметок не найдено")
@@ -33,7 +33,7 @@ def display_all_notes() -> None:
 
 def select_note_by_date():
     """Отбираем заметки по дате"""
-    print("*" * 25)
+    print("*" * 30)
     notes = get_notes()
     while True:
         date_input = input("Введите дату в формате 'd.m.YYYY' (день.месяц.год): ")
@@ -58,7 +58,7 @@ def select_note_by_date():
 
 def select_note_by_title():
     """Отбираем заметки по заголовку"""
-    print("*" * 25)
+    print("*" * 30)
     notes = get_notes()
     while True:
         title_input = input("Введите заголовок заметки: ")
