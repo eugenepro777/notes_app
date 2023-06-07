@@ -31,7 +31,7 @@ def display_all_notes() -> None:
             print()
 
 
-def select_note_by_date():
+def select_note_by_date() -> None:
     """Отбираем заметки по дате"""
     print("*" * 30)
     notes = get_notes()
@@ -56,7 +56,8 @@ def select_note_by_date():
             print()
             break
 
-def select_note_by_title():
+
+def select_note_by_title() -> None:
     """Отбираем заметки по заголовку"""
     print("*" * 30)
     notes = get_notes()
